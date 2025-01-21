@@ -6,8 +6,6 @@ import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement
 
 ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend);
 
-// TODO: Fix errors
-
 export default function ScreenTwo() {
   const textOne = ScreenText.TextTwo;
 
