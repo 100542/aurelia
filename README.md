@@ -10,7 +10,4 @@ Deze applicatie maakt veel gebruik van JSON data & het uitlezen van verschillend
 # Build
 
 Deze applicatie is volledig gebouwd in React/TS (Vite).
-
-# Developer(s)
-
-Ontwikkeld door Aaron Heemskerk.
+Ook maakt de website gebruik van Graph.js voor het tonen van grafieken.
