@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'WMedium';
+    src: url('../fonts/wellingtons/TT Wellingtons Trial Medium.otf') format('opentype');
+  }
+  
+  .wmedium-font {
+    font-family: 'WMedium', sans-serif;
+  }
