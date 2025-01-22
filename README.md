@@ -7,6 +7,8 @@ Deze applicatie biedt de functionaliteit voor de welkomstschermen in de hallen v
 
 Deze applicatie maakt veel gebruik van JSON data & het uitlezen van verschillende API's om zo de meest relevante informatie te tonen aan de doelgroep.
 
+De applicatie is niet responsief, het is gemaakt voor schermen met een minimale grootte van 1920x1080.
+
 # Build
 
 Deze applicatie is volledig gebouwd in React/TS (Vite).

@@ -1,10 +1,28 @@
 import { useEffect, useState } from "react";
 import ScreenText from "../data/ScreenText.json";
 import "../styles/FontFaces.css";
+import LogoHiRes from "../assets/LogoHiRes.png";
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend } from "chart.js";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 
-ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 export default function ScreenTwo() {
   const textOne = ScreenText.TextTwo;
@@ -41,10 +59,12 @@ export default function ScreenTwo() {
         );
         const data = await response.json();
 
-        const labels = data.map((item: (string | number | Date)[]) => new Date(item[0]).toLocaleTimeString());
+        const labels = data.map((item: (string | number | Date)[]) =>
+          new Date(item[0]).toLocaleTimeString()
+        );
         const prices = data.map((item: string[]) => parseFloat(item[4]));
 
-        type NewType = ChartJS.ChartData<'line'>;
+        type NewType = ChartJS.ChartData<"line">;
 
         setChartData({
           labels,
@@ -56,7 +76,7 @@ export default function ScreenTwo() {
               backgroundColor: "#E1C09D",
               tension: 0.4,
             },
-          ] as NewType['datasets'],
+          ] as NewType["datasets"],
         });
       } catch (error) {
         console.error("Error fetching candlestick data:", error);
@@ -75,6 +95,11 @@ export default function ScreenTwo() {
         <div className="flex flex-col justify-between p-4 h-full w-full">
           <div>
             <div className="flex flex-row gap-10 text-center">
+              <img
+                src={LogoHiRes}
+                alt="Aurelia Logo"
+                className="w-40 h-40 p-4"
+              />
               {textOne.title && (
                 <h1 className="text-9xl wmedium-font font-bold text-white/80 p-4">
                   {textOne.title}
@@ -82,14 +107,19 @@ export default function ScreenTwo() {
               )}
             </div>
             <div className="text-left mt-10">
-              <h2 className="text-5xl wmedium-font font-bold p-4 text-white/70">Waarde Bitcoin (USD):</h2>
+              <h2 className="text-5xl wmedium-font font-bold p-4 text-white/70">
+                Waarde Bitcoin (USD):
+              </h2>
               <p className="text-4xl p-4 text-white/70 mt-4">
                 {loading ? "Loading..." : `$${parseFloat(price).toFixed(2)}`}
               </p>
             </div>
           </div>
 
-          <div className="mt-10 p-4" style={{ width:'100%', height: '45dvh', margin: '0 auto' }}>
+          <div
+            className="mt-10 p-4"
+            style={{ width: "100%", height: "45dvh", margin: "0 auto" }}
+          >
             <Line data={chartData} options={{ responsive: true }} />
           </div>
         </div>
