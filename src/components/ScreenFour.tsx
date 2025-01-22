@@ -2,7 +2,7 @@ import ScreenText from "../data/ScreenText.json";
 import LogoHiRes from "../assets/LogoHiRes.png";
 import { useEffect, useState } from "react";
 
-export default function ScreenOne() {
+export default function ScreenFour() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const textFour = ScreenText.TextFour;
 

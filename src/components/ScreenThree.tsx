@@ -3,7 +3,7 @@ import "../styles/FontFaces.css";
 import LogoHiRes from "../assets/LogoHiRes.png";
 import { useEffect, useState } from "react";
 
-export default function ScreenOne() {
+export default function ScreenThree() {
   const textThree = ScreenText.TextThree;
 
   interface WeatherData {

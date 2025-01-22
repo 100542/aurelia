@@ -1,0 +1,18 @@
+{
+  "vacations": [
+    { "destination": "IJsland", "tip": "Bezoek de geisers en het Noorderlicht." },
+    { "destination": "Japan", "tip": "Probeer sushi in Tokio en bezoek Kyoto." },
+    { "destination": "Zuid-Afrika", "tip": "Maak een safari in het Krugerpark." },
+    { "destination": "Italië", "tip": "Geniet van pizza in Napels en het Colosseum in Rome." },
+    { "destination": "Canada", "tip": "Bezoek Banff National Park voor spectaculaire bergen." },
+    { "destination": "Australië", "tip": "Ontdek het Great Barrier Reef en geniet van Sydney." },
+    { "destination": "Peru", "tip": "Verken Machu Picchu en de Amazone." },
+    { "destination": "Frankrijk", "tip": "Bezoek de Eiffeltoren in Parijs en geniet van wijn in Bordeaux." },
+    { "destination": "Thailand", "tip": "Relax op de stranden van Phuket en ontdek Bangkok." },
+    { "destination": "Nieuw-Zeeland", "tip": "Ga wandelen in Fiordland National Park en geniet van Queenstown." },
+    { "destination": "Egypte", "tip": "Bewonder de piramides van Gizeh en maak een Nijlcruise." },
+    { "destination": "Noorwegen", "tip": "Bekijk de fjorden en het Noorderlicht." },
+    { "destination": "Verenigde Staten", "tip": "Rij over Route 66 en bezoek nationale parken zoals Yosemite." },
+    { "destination": "Mexico", "tip": "Ontdek de tempels van Chichén Itzá en de stranden van Cancún." }
+  ]
+}

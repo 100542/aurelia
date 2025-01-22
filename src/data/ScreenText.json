@@ -15,5 +15,17 @@
     "TextFour": {
         "title": "Datum en tijd",
         "text": "Bekijk live de datum en tijd in Nederland."
+    },
+    "TextFive": {
+        "title": "Quotes",
+        "text": "Goede adviezen om de dag mee te beginnen."
+    },
+    "TextSix": {
+        "title": "Meetings",
+        "text": "Bekijk de aankomende meeting(s) van vandaag."
+    },
+    "TextSeven": {
+        "title": "Vrije tijd",
+        "text": "Bekijk de beste bestemmingen voor in de vrije tijd."
     }
 }

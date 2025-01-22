@@ -13,6 +13,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { ChartData } from 'chart.js';
 
 ChartJS.register(
   CategoryScale,
@@ -47,7 +48,7 @@ export default function ScreenTwo() {
     };
 
     fetchPrice();
-    const interval = setInterval(fetchPrice, 5000);
+    const interval = setInterval(fetchPrice, 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -111,7 +112,7 @@ export default function ScreenTwo() {
                 Waarde Bitcoin (USD):
               </h2>
               <p className="text-4xl p-4 text-white/70 mt-4">
-                {loading ? "Loading..." : `$${parseFloat(price).toFixed(2)}`}
+                {loading ? "Loading..." : `$${parseFloat(price)}`}
               </p>
             </div>
           </div>

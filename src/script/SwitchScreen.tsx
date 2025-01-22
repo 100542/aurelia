@@ -3,10 +3,13 @@ import ScreenOne from '../components/ScreenOne';
 import ScreenTwo from '../components/ScreenTwo';
 import ScreenThree from '../components/ScreenThree';
 import ScreenFour from '../components/ScreenFour';
+import ScreenFive from '../components/ScreenFive';
+import ScreenSix from '../components/ScreenSix';
+import ScreenSeven from '../components/ScreenSeven';
 
 const SwitchScreen = () => {
   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
-  const screens = [<ScreenOne />, <ScreenTwo />, <ScreenThree />, <ScreenFour />];
+  const screens = [<ScreenOne />, <ScreenTwo />, <ScreenThree />, <ScreenFour />, <ScreenFive />, <ScreenSix />, <ScreenSeven />];
 
   useEffect(() => {
     const timer = setInterval(() => {

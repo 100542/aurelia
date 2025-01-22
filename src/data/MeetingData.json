@@ -1,5 +1,167 @@
 {
-    "MeetingData": {
-        "expected": ["Company A", " Company B", " Company C", " Company D", " Company E", " Company F", " Company G", " Company H", " Company I", " Company J"]
-    }
-}
+    "data": [
+      {
+        "type": "Meeting",
+        "company": "TechVibe Solutions",
+        "time": "09:15:00",
+        "goal": "Brainstorm over nieuwe software functies."
+      },
+      {
+        "type": "Meeting",
+        "company": "InnovaTech Labs",
+        "time": "11:30:00",
+        "goal": "Bespreken van kwartaalrapporten en KPI's."
+      },
+      {
+        "type": "Meeting",
+        "company": "EcoFuture Enterprises",
+        "time": "14:00:00",
+        "goal": "Planning van de lancering van duurzame producten."
+      },
+      {
+        "type": "Meeting",
+        "company": "CyberSphere Systems",
+        "time": "16:45:00",
+        "goal": "Veiligheidsaudits en risicobeheer."
+      },
+      {
+        "type": "Meeting",
+        "company": "GlobalNext Innovations",
+        "time": "13:00:00",
+        "goal": "Review van lopende marketingcampagnes."
+      },
+      {
+        "type": "Meeting",
+        "company": "SmartBuild Technologies",
+        "time": "10:30:00",
+        "goal": "Evaluatie van klantfeedback en productontwikkeling."
+      },
+      {
+        "type": "Meeting",
+        "company": "NeuroTech Ventures",
+        "time": "08:00:00",
+        "goal": "Overleg over nieuwe research- en ontwikkelingsinitiatieven."
+      },
+      {
+        "type": "Meeting",
+        "company": "GreenFlow Solutions",
+        "time": "17:30:00",
+        "goal": "Bespreken van milieuvriendelijke bedrijfsinitiatieven."
+      },
+      {
+        "type": "Meeting",
+        "company": "QuantumLogic Innovations",
+        "time": "15:15:00",
+        "goal": "Strategische planning voor technologische vooruitgangen."
+      },
+      {
+        "type": "Meeting",
+        "company": "Visionary Concepts",
+        "time": "12:45:00",
+        "goal": "Verkennen van nieuwe markten en partnerschappen."
+      },
+      {
+        "type": "Meeting",
+        "company": "InsightX Analytics",
+        "time": "18:00:00",
+        "goal": "Analyse van klantdata en het verbeteren van de user experience."
+      },
+      {
+        "type": "Meeting",
+        "company": "BlueTech Partners",
+        "time": "19:30:00",
+        "goal": "Evaluatie van de impact van de laatste productlancering."
+      },
+      {
+        "type": "Meeting",
+        "company": "NextGen Digital",
+        "time": "07:45:00",
+        "goal": "Strategie voor de lancering van nieuwe digitale producten."
+      },
+      {
+        "type": "Meeting",
+        "company": "CloudStream Innovations",
+        "time": "09:50:00",
+        "goal": "Discussie over de nieuwste cloudtechnologieën."
+      },
+      {
+        "type": "Meeting",
+        "company": "DataNova Systems",
+        "time": "10:00:00",
+        "goal": "Update over data-analysemethoden en technologie-integratie."
+      },
+      {
+        "type": "Meeting",
+        "company": "TrueWave Enterprises",
+        "time": "20:00:00",
+        "goal": "Evalueren van samenwerkingsmogelijkheden met nieuwe partners."
+      },
+      {
+        "type": "Meeting",
+        "company": "DigitalBloom Solutions",
+        "time": "11:00:00",
+        "goal": "Bespreken van de implementatie van AI in bestaande systemen."
+      },
+      {
+        "type": "Meeting",
+        "company": "EvoTech Dynamics",
+        "time": "12:30:00",
+        "goal": "Evaluatie van R&D-projecten en toekomstige innovaties."
+      },
+      {
+        "type": "Meeting",
+        "company": "QuantumCore Industries",
+        "time": "14:45:00",
+        "goal": "Bepalen van de productstrategie voor het komende jaar."
+      },
+      {
+        "type": "Meeting",
+        "company": "TechLift Systems",
+        "time": "08:30:00",
+        "goal": "Overleg over het verbeteren van de klantenservice."
+      },
+      {
+        "type": "Meeting",
+        "company": "VisionSpark Technologies",
+        "time": "16:00:00",
+        "goal": "Review van de voortgang van de huidige technische projecten."
+      },
+      {
+        "type": "Meeting",
+        "company": "BioGen Solutions",
+        "time": "18:30:00",
+        "goal": "Bespreken van de ontwikkeling van nieuwe biotechnologische producten."
+      },
+      {
+        "type": "Meeting",
+        "company": "Skyline Innovations",
+        "time": "13:30:00",
+        "goal": "Strategische bespreking voor internationale uitbreiding."
+      },
+      {
+        "type": "Meeting",
+        "company": "TechPulse Labs",
+        "time": "17:00:00",
+        "goal": "Bespreken van software-updates en nieuwe functies."
+      },
+      {
+        "type": "Meeting",
+        "company": "MindShift Ventures",
+        "time": "19:00:00",
+        "goal": "Overleg over de lancering van de nieuwste mindfulness-app."
+      },
+      {
+        "type": "Meeting",
+        "company": "LumaTech Solutions",
+        "time": "15:00:00",
+        "goal": "Bespreken van de technische specificaties voor een nieuw product."
+      },
+      {
+        "type": "Meeting",
+        "company": "RedShift Innovations",
+        "time": "09:40:00",
+        "goal": "Evalueer de technische mogelijkheden voor nieuwe markten."
+      }
+    ]
+  }
+  
