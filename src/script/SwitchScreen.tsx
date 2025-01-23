@@ -9,7 +9,7 @@ import ScreenSeven from '../components/ScreenSeven';
 
 const SwitchScreen = () => {
   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
-  const screens = [<ScreenOne />, <ScreenTwo />, <ScreenThree />, <ScreenFour />, <ScreenFive />, <ScreenSix />, <ScreenSeven />];
+  const screens = [<ScreenOne />, <ScreenTwo />, <ScreenThree />, <ScreenFour />, <ScreenFive />, <ScreenSix />, <ScreenSeven />,];
 
   useEffect(() => {
     const timer = setInterval(() => {

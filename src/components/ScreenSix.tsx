@@ -2,32 +2,12 @@ import ScreenText from "../data/ScreenText.json";
 import "../styles/FontFaces.css";
 import LogoHiRes from "../assets/LogoHiRes.png";
 import MeetingData from "../data/MeetingData.json";
-import { useEffect, useState } from "react";
 
 export default function ScreenSix() {
   const textSix = ScreenText.TextSix;
   const meetingData = MeetingData.data.length;
-  const companyData = MeetingData.data;
-
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const hours = currentTime.getHours();
-  const minutes = currentTime.getMinutes();
-  const seconds = currentTime.getSeconds();
-
-  const time = `${hours}:${minutes}:${seconds}`;
-
-  if (time > companyData[0].time) {
-    companyData.shift();
-  }
+  const companyData = MeetingData.data[Math.floor(Math.random() * meetingData)];
+  const randomCompanyMeeting = [companyData];
 
   return (
     <body className="flex items-center justify-center h-screen w-screen overflow-hidden">
@@ -58,10 +38,10 @@ export default function ScreenSix() {
             </div>
             <div className="w-full h-full flex flex-row justify-center pr-4">
             <div className="text-3xl bg-black/30 text-white/70 wmedium-font min-w-full h-fit w-fit text-left border-[#E1C09D] border-2 rounded-md ml-4 mt-8 p-4">
-              <p className="font-bold text-4xl mb-2">{companyData[0].type}:</p>
-                <p className="mb-2">{companyData[0].company}</p>
-                <p className="mb-2">{companyData[0].time}</p>
-                <p className="mb-2">{companyData[0].goal}</p>
+              <p className="font-bold text-4xl mb-2">{randomCompanyMeeting[0].type}:</p>
+                <p className="mb-2">{randomCompanyMeeting[0].company}</p>
+                <p className="mb-2">{randomCompanyMeeting[0].time}</p>
+                <p className="mb-2">{randomCompanyMeeting[0].goal}</p>
             </div>
             </div>
           </div>
