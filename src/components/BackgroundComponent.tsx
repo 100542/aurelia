@@ -140,15 +140,18 @@ export default function Waves({
       ctxRef.current = canvas.getContext("2d");
 
       function setSize() {
-        const boundingRect = container.getBoundingClientRect();
+        const boundingRect = container?.getBoundingClientRect();
+        if (!boundingRect) return;
         boundingRef.current = {
           width: boundingRect.width,
           height: boundingRect.height,
           left: boundingRect.left,
           top: boundingRect.top,
         };
-        canvas.width = boundingRect.width;
-        canvas.height = boundingRect.height;
+        if (canvas) {
+          canvas.width = boundingRect.width;
+          canvas.height = boundingRect.height;
+        }
       }
 
       function setLines() {

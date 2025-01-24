@@ -13,7 +13,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { ChartData } from 'chart.js';
 
 ChartJS.register(
   CategoryScale,
@@ -25,12 +24,17 @@ ChartJS.register(
   Legend
 );
 
+import { ChartData } from "chart.js";
+
 export default function ScreenTwo() {
   const textOne = ScreenText.TextTwo;
 
   const [price, setPrice] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [chartData, setChartData] = useState({ labels: [], datasets: [] });
+  const [chartData, setChartData] = useState<ChartData<"line">>({
+    labels: [],
+    datasets: [],
+  });  
 
   useEffect(() => {
     const fetchPrice = async () => {
@@ -65,7 +69,7 @@ export default function ScreenTwo() {
         );
         const prices = data.map((item: string[]) => parseFloat(item[4]));
 
-        type NewType = ChartJS.ChartData<"line">;
+        type NewType = ChartData<"line">;
 
         setChartData({
           labels,
@@ -112,7 +116,7 @@ export default function ScreenTwo() {
                 Waarde Bitcoin (USD):
               </h2>
               <p className="text-4xl p-4 text-white/70 mt-4">
-                {loading ? "Loading..." : `$${parseFloat(price)}`}
+              {loading ? "Loading..." : `$${parseFloat(price.toString()).toString()}`}
               </p>
             </div>
           </div>
