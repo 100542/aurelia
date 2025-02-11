@@ -103,17 +103,17 @@ export default function ScreenTwo() {
               <img
                 src={LogoHiRes}
                 alt="Aurelia Logo"
-                className="w-40 h-40 p-4"
+                className="w-32 h-32 p-4"
               />
               {textOne.title && (
-                <h1 className="text-9xl wmedium-font font-bold text-white/80 p-4">
+                <h1 className="text-8xl wmedium-font font-bold text-white/80 p-4">
                   {textOne.title}
                 </h1>
               )}
             </div>
             <div className="text-left mt-10">
               <h2 className="text-5xl wmedium-font font-bold p-4 text-white/70">
-                Waarde Bitcoin (USD):
+                Waarde Bitcoin (USD)
               </h2>
               <p className="text-4xl p-4 text-white/70 mt-4">
               {loading ? "Loading..." : `$${parseFloat(price.toString()).toString()}`}
@@ -125,7 +125,7 @@ export default function ScreenTwo() {
             className="mt-10 p-4"
             style={{ width: "100%", height: "45dvh", margin: "0 auto" }}
           >
-            <Line data={chartData} options={{ responsive: true }} />
+            <Line data={chartData} options={{ responsive: true}} />
           </div>
         </div>
       </div>
