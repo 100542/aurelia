@@ -2,6 +2,7 @@ import ScreenText from "../data/ScreenText.json";
 import "../styles/FontFaces.css";
 import LogoHiRes from "../assets/LogoHiRes.png";
 import MeetingData from "../data/MeetingData.json";
+import HourglassEmptyOutlinedIcon from '@mui/icons-material/HourglassEmptyOutlined';
 
 export default function ScreenOne() {
   const textOne = ScreenText.TextOne;
@@ -26,7 +27,7 @@ export default function ScreenOne() {
               <p className="text-5xl text-white/70 wmedium-font max-w-[80dvw] p-4">{textOne.text}</p>
             )}
             <div className="text-xl bg-black/30 text-white/70 wmedium-font h-16 w-fit text-center border-[#E1C09D] border-2 rounded-md mt-8 p-4">
-                Verwachte bedrijven: {meetingData}
+               <HourglassEmptyOutlinedIcon style={{ color: "white", width: 25, height: 25, opacity: 70 }} /> Verwachte bedrijven: {meetingData}
             </div>
           </div>
         </div>

@@ -2,6 +2,9 @@ import ScreenText from "../data/ScreenText.json";
 import "../styles/FontFaces.css";
 import LogoHiRes from "../assets/LogoHiRes.png";
 import { useEffect, useState } from "react";
+import DeviceThermostatOutlinedIcon from '@mui/icons-material/DeviceThermostatOutlined';
+import CloudOutlinedIcon from '@mui/icons-material/CloudOutlined';
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 
 export default function ScreenThree() {
   const textThree = ScreenText.TextThree;
@@ -30,6 +33,7 @@ export default function ScreenThree() {
         setData(json);
       })
       .catch((error) => console.error(error));
+
   }, []);
 
   return (
@@ -41,10 +45,10 @@ export default function ScreenThree() {
               <img
                 src={LogoHiRes}
                 alt="Aurelia Logo"
-                className="w-40 h-40 p-4"
+                className="w-32 h-32 p-4"
               />
               {textThree.title && (
-                <h1 className="text-9xl wmedium-font font-bold text-white/80 p-4">
+                <h1 className="text-8xl wmedium-font font-bold text-white/80 p-4">
                   {textThree.title}
                 </h1>
               )}
@@ -57,6 +61,9 @@ export default function ScreenThree() {
             <div className="flex flex-row justify-between gap-4 w-full h-full mt-24">
             {data?.hourly?.temperature_2m?.[0] !== undefined && (
             <div className="flex flex-col justify-center bg-black/30 border-2 border-[#E1C09D] text-center rounded-2xl w-[32%] h-full">
+              <div>
+                <DeviceThermostatOutlinedIcon style={{ width: 75, height: 75, color: "white", opacity: 70}}/>
+              </div>
                 <p className="text-9xl text-white/80 wmedium-font max-w-[80dvw] p-4">
                 {data.hourly.temperature_2m[0]} °C
               </p>
@@ -64,6 +71,9 @@ export default function ScreenThree() {
             )}
             {data?.hourly?.precipitation?.[0] !== undefined && (
             <div className="flex flex-col justify-center bg-black/30 border-2 border-[#E1C09D] text-center rounded-2xl w-[32%] h-full">
+                <div>
+                <CloudOutlinedIcon style={{ width: 75, height: 75, color: "white", opacity: 70}}/>
+                </div>
                 <p className="text-9xl text-white/80 wmedium-font max-w-[80dvw] p-4">
                 {data.hourly.precipitation[0]} mm
               </p>
@@ -71,9 +81,11 @@ export default function ScreenThree() {
             )}
             {data?.timezone && (
             <div className="flex flex-col justify-center bg-black/30 border-2 border-[#E1C09D] text-center rounded-2xl w-[32%] h-full">
+                <div>
+                  <AccessTimeOutlinedIcon style={{ width: 75, height: 75, color: "white", opacity: 70}} />
+                </div>
                 <p className="text-9xl flex flex-col text-white/80 wmedium-font max-w-[80dvw] p-4">
                 {data.timezone}
-                <span className="text-xl text-white/70 wmedium-font max-w-[80dvw] p-4">Timezone</span>
               </p>
             </div>
             )}
